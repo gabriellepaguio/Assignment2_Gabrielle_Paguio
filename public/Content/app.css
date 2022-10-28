@@ -176,14 +176,12 @@ html
 {
     height: 300px;
 }
-#projects
+.projects
 {
     margin-left: 25%;
     width: fit-content;
-    background-color: white;
     margin-bottom: 6%;
     padding: 30px;
-    box-shadow: 7px 10px 10px #401410;
     margin-right: 25%;
     margin-top: 3%;
 }

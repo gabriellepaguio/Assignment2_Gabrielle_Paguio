@@ -5,10 +5,11 @@
 <%- include partials/header.ejs %>
 <link rel='stylesheet' href='/Content/app.css' />
 <%- include partials/nav_bar.ejs %>
-<main>
+<main class="min-vh-100">
     <h1>Welcome to the <%= title %> Page</h1>
     <!--projects div contains all the information about the projects from first year-->
-    <div id="projects">
+    <!--bootstrap source: https://getbootstrap.com/docs/4.1/utilities/shadows/-->
+    <div class="projects shadow-lg p-3 mb-5 bg-white rounded">
         <!-- title of the content -->
         <h2>Python Projects</h2>
         <div id="project1">
