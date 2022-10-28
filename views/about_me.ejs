@@ -1,0 +1,33 @@
+<!--Assignemnt 2: About Me Page
+    Gabrielle Paguio
+    100820990-->
+
+<%- include partials/header.ejs %>
+<link rel='stylesheet' href='/Content/app.css' />
+<%- include partials/nav_bar.ejs %>
+<main>
+    <h1>Welcome to the <%= title %> Page</h1>
+    <div id="content">
+        <!-- left column or the top section when in tablet or phone view -->
+        <div id="leftCol">
+            <!-- creates the video controls; the video will autoplay and will remain muted unless the user unmutes the video -->
+            <video controls preload="auto" autoplay loop muted id="skatingVideo">
+                <!-- imports the video from library -->
+                <source src="/Assets/video/skatingVid.mov" type="video/mp4">
+            </video>
+            <!-- inserts a picture of me and has the alternate text which will appear if the image cannot be loaded -->
+            <img class="facePicAboutMe" src="/Assets/images/facePic.JPG" alt="Picture of me">
+        </div>
+        <!-- right column or the bottom section when in tablet or phone size -->
+        <div id="rightCol">
+            <!-- my introduction -->
+            <p class="aboutMeIntro">Hi, my name's Gabrielle.<br>I'm in my second year of Networking and  IT Security!</p>
+        </div>
+    </div>
+    <!-- separates content from footer; doesn't allow elements to float within this div -->
+    <div id="clearBoth"></div>
+</main>
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
+
+

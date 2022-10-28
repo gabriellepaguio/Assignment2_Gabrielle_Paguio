@@ -1,0 +1,46 @@
+/*Assignment 2 - HOME
+Gabrielle Paguio
+100820990*/
+
+@charset "UTF-8";
+
+/* ensures that all 3 images in home page are centered and have equal spacing */
+#img
+{
+    text-align: center;
+    word-spacing: 30px;
+    margin-bottom: 60px;
+}
+/* makes all the pictures the same sizes; the taller picture would have the same height as the others' width */
+.picOne, .picTwo
+{
+    width: 300px;
+}
+.facePic
+{
+    height: 300px;
+}
+#clearBoth
+{
+    clear: both;
+}
+/* Source: https://stackoverflow.com/questions/3443606/make-footer-stick-to-bottom-of-page-correctly 
+    this will make sure the footer will stay at the bottom of the page*/
+html
+{
+    position: relative;
+    min-height: 100%;
+}
+/* contains the copyright and the contact info */
+#footer
+{
+    background-color: transparent;
+    /* width is 100% so that the whole footer would be the bottom of the webpage */
+    width: 100%;
+    /* code ensures the footer will remain at the bottom of the screen */
+    position: absolute;
+    left: 0;
+    /* centers the info */
+    text-align: center;
+    font-size: 12px;
+}

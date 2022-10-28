@@ -1,0 +1,265 @@
+/*Assignment 2 - CONTACT ME
+Gabrielle Paguio
+100820990*/
+
+@charset "UTF-8";
+
+/* form remains a white box with a darker shawdow to emphasize the form - gives contrast to gradient background */
+#contactMeForm
+{
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    /* source for box shadows: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+    box-shadow: 7px 10px 6px #8c8074;
+    height: 100%;
+}
+form
+{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+    resize: none;
+    margin-bottom: 30px;
+}
+h1
+{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 30px;
+    text-align: center;
+}
+p.contactTitle
+{
+    font-size: 28px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+p
+{
+    color: #733729;
+    background-color: white;
+}
+.submitButton
+{
+    color: white;
+    background-color: #733729;
+    margin-right: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+    border: 10px;
+    font-size: 13px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.submitButton:hover
+{
+    color: white;
+    background-color: #BFB699;
+    margin-right: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+    border: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.resetButton
+{
+    color: white;
+    background-color: #733729;
+    text-align: center;
+    margin-right: 20px;
+    text-decoration: none;
+    width: 120px;
+    border: 10px;
+    font-size: 13px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.resetButton:hover
+{
+    color: white;
+    background-color: #BFB699;
+    text-align: center;
+    margin-right: 20px;
+    text-decoration: none;
+    width: 120px;
+    border: 10px;
+    font-size: 13px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#clearBoth, #clearBothFoot
+{
+    clear: both;
+}
+html
+{
+    position: relative;
+    min-height: 100%;
+}
+#footer
+{
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 12px;
+}
+.nav-item, .nav-link
+{
+    font-family: 'Arvo', serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 100%;
+    /* color: #401410; */
+}
+.nav-item:link
+{
+    border: none;
+    line-height: 50px;
+    padding: 8px;
+    background-color: white;
+    margin: 30px;
+    color: #401410;
+    height: 0;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+}
+.nav-item:visited
+{
+    border: none;
+    background-color: white;
+    color: #401410;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+}
+.nav-item:hover
+{
+    border: none;
+    color: #BF8F73;
+    font-family: 'Arvo', serif;
+    /*first and second values moves the text shadow down by 2px and left 2px, third value 
+    is how much the shadow will be blurred, last value is the colour of the shadow*/
+    text-shadow: 3px 5px 6.7px #BFB699;
+    text-decoration: none;
+}
+.nav-item:active
+{
+    border: none;
+    color: #BF8F73;
+    font-family: 'Arvo', serif;
+    text-shadow: 3px 5px 6.7px #BFB699;
+    text-decoration: none;
+}
+.navbar-brand
+{
+    font-family: 'Arvo', serif;
+    font-size: 200%;
+    color: #8C8074;
+    letter-spacing: 10px;
+}
+#img
+{
+    text-align: center;
+    word-spacing: 30px;
+    margin-bottom: 60px;
+}
+/* makes all the pictures the same sizes; the taller picture would have the same height as the others' width */
+.picOne, .picTwo
+{
+    width: 300px;
+}
+.facePic
+{
+    height: 300px;
+}
+#projects
+{
+    margin-left: 25%;
+    width: fit-content;
+    background-color: white;
+    margin-bottom: 6%;
+    padding: 30px;
+    box-shadow: 7px 10px 10px #401410;
+    margin-right: 25%;
+    margin-top: 3%;
+}
+b.title
+{
+    color: #733729;
+    text-shadow: 3px 5px 6.7px #F2E2C4;
+    font-size: 23px;
+    text-align: center;
+}
+#project1
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+#project2
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+video
+{
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 3%;
+    width: 70%;
+    border: #BFB699 3px;
+}
+.facePicAboutMe
+{
+    width: 18.2%;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    vertical-align: 0%;
+}
+#leftCol
+{
+    background-color: #8C8074;
+    width: 60%;
+    float: left;
+    height: 650px;
+}
+#rightCol
+{
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    width: 40%;
+    height: 650px;
+    background-color: #8C8074;
+    color: white;
+    float: right;
+}
+p.aboutMeIntro
+{
+    margin-top: 30%;
+    background-color: transparent;
+    color: white;
+}
+.contactBackground
+{
+    /*angle linear gradient*/
+    background-color: white;
+    /*for mozilla  firefox*/
+    background: -moz-linear-gradient(106deg, #F2E2C4 60%, transparent 75%); 
+    /*for Chrome and Safari*/
+    background: -webkit-linear-gradient(106deg, #F2E2C4 60%, transparent 75%);
+    /*for Opera browser*/
+    background: -o-linear-gradient(106deg, #F2E2C4 60%, transparent 75%); 
+    background: linear-gradient(to 110deg, #BFB699 0%,white 100%); 
+}
+.container-fluid
+{
+    background-color: transparent;
+}

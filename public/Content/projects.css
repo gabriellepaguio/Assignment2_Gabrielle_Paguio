@@ -1,0 +1,46 @@
+/*Assignment 2 - PROJECTS PAGE
+Gabrielle Paguio
+100820990*/
+
+@charset "UTF-8";
+
+#projects
+{
+    margin-left: 25%;
+    width: fit-content;
+    background-color: white;
+    margin-bottom: 6%;
+    padding: 30px;
+    box-shadow: 7px 10px 10px #401410;
+    margin-right: 25%;
+    margin-top: 3%;
+}
+b.title
+{
+    color: #733729;
+    text-shadow: 3px 5px 6.7px #F2E2C4;
+    font-size: 23px;
+    text-align: center;
+}
+#project1
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+#project2
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+#clearBoth, #clearBothFoot
+{
+    clear: both;
+}
+html
+{
+    position: relative;
+    min-height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}

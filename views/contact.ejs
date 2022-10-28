@@ -1,0 +1,48 @@
+<!--Assignemnt 2: Contact Page
+    Gabrielle Paguio
+    100820990-->
+
+<%- include partials/header.ejs %>
+<link rel='stylesheet' href='/Content/app.css' />
+<%- include partials/nav_bar.ejs %>
+<main class="contactBackground">
+  <h1>Welcome to the <%= title %> Page</h1>
+  <!-- division contains the form for the contact me page; needs name, email, phone number, and message -->
+    <div id="contactMeForm">
+        <!-- the title of the form is in its own div so that it is easier to implement design with the different sizes -->
+        <p class="contactTitle"><br>Contact Me</p>
+        <!--message forms would send to my email-->
+        <form action="mailto:gabriellejoanne.paguio@ontariotechu.net" ?subject="Contact Me" method="post" enctype="text/plain" name="form">
+            <p>
+                <!-- <br> adds a new line -->
+                <label for="name">Your Name</label><br> 
+                <!-- placeholder is made so that the user knows what to enter in that input box -->
+                <input type="text" name="name" placeholder="Enter your name">
+            </p>
+            <p>
+                <label for="email">Your Email</label><br>
+                <input type="email" name="email" placeholder="Enter your email">
+            </p>
+            <p>
+                <label for="phoneNumber">Your Phone Number</label><br>
+                <!-- the pattern shows how the phone number should be formed -->
+                <input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(xxx)-xxx-xxxx">
+            </p>
+            <p>
+                <label for ="text">Message</label><br>
+                <textarea name="message" cols="30" rows="10" placeholder="Messages, comments, queries..."></textarea>
+            </p>
+            <p>
+                <!-- creates the submit button which will send to my email if all the inputs are valid -->
+                <button type="submit" class="submitButton">Send message form</button>
+            </p>
+            <p>
+                <!-- button will erase all the already put info in the form and resets the form -->
+                <button type="reset" class="resetButton">Reset message form</button>
+            </p>
+        </form>
+    </div>
+</main>
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
+

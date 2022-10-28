@@ -1,0 +1,65 @@
+/*Assignment 2 - ABOUT ME
+Gabrielle Paguio
+100820990*/
+
+@charset "UTF-8";
+
+video
+{
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 3%;
+    width: 70%;
+    border: #BFB699 3px;
+}
+.facePicAboutMe
+{
+    width: 18.2%;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    vertical-align: 0%;
+}
+#leftCol
+{
+    background-color: #8C8074;
+    width: 60%;
+    float: left;
+    height: 650px;
+}
+#rightCol
+{
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    width: 40%;
+    height: 650px;
+    background-color: #8C8074;
+    color: white;
+    float: right;
+}
+p.aboutMeIntro
+{
+    margin-top: 30%;
+}
+/* ensures no floating element within div box */
+#clearBoth
+{
+    clear: both;
+}
+/*source: https://stackoverflow.com/questions/3443606/make-footer-stick-to-bottom-of-page-correctly*/
+html
+{
+    position: relative;
+    min-height: 100%;
+}
+#footer
+{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 12px;
+}
