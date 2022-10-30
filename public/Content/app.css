@@ -1,8 +1,10 @@
-/*Assignment 2 - CONTACT ME
+/*Assignment 2
 Gabrielle Paguio
 100820990*/
 
 @charset "UTF-8";
+
+/* CONTACT ME PAGE */
 
 /* form remains a white box with a darker shawdow to emphasize the form - gives contrast to gradient background */
 #contactMeForm
@@ -13,6 +15,18 @@ Gabrielle Paguio
     /* source for box shadows: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
     box-shadow: 7px 10px 6px #8c8074;
     height: 100%;
+}
+.contactBackground
+{
+    /*angle linear gradient*/
+    background-color: white;
+    /*for mozilla  firefox*/
+    background: -moz-linear-gradient(106deg, #F2E2C4 60%, transparent 75%); 
+    /*for Chrome and Safari*/
+    background: -webkit-linear-gradient(106deg, #F2E2C4 60%, transparent 75%);
+    /*for Opera browser*/
+    background: -o-linear-gradient(106deg, #F2E2C4 60%, transparent 75%); 
+    background: linear-gradient(to 110deg, #BFB699 0%,white 100%); 
 }
 form
 {
@@ -90,16 +104,16 @@ p
     font-size: 13px;
     font-family: 'Nunito Sans', sans-serif;
 }
-#clearBoth, #clearBothFoot
+/* #clearBoth, #clearBothFoot
 {
     clear: both;
-}
-html
+} */
+/* html
 {
     position: relative;
     min-height: 100%;
-}
-#footer
+} */
+/* #footer
 {
     background-color: white;
     width: 100%;
@@ -107,7 +121,9 @@ html
     left: 0;
     text-align: center;
     font-size: 12px;
-}
+} */
+
+/* Navigation bar */
 .nav-item, .nav-link
 {
     font-family: 'Arvo', serif;
@@ -161,6 +177,8 @@ html
     color: #8C8074;
     letter-spacing: 10px;
 }
+
+/* Home Page */
 #img
 {
     text-align: center;
@@ -176,6 +194,8 @@ html
 {
     height: 300px;
 }
+
+/* Projects Page */
 .projects
 {
     margin-left: 25%;
@@ -204,58 +224,37 @@ b.title
     margin-bottom: 30px;
     font-size: 12px;
 }
-video
+
+/* About Me Page */
+/* video
 {
-    margin-left: 30px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-right: 3%;
-    width: 70%;
-    border: #BFB699 3px;
-}
+    min-height: 200%;
+} */
 .facePicAboutMe
 {
-    width: 18.2%;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    vertical-align: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
-#leftCol
+.middleAboutMe, .leftAboutMe
 {
     background-color: #8C8074;
-    width: 60%;
-    float: left;
-    height: 650px;
+    display: flex;
+    align-items: center;
 }
-#rightCol
+.rightAboutMe
 {
     letter-spacing: 2px;
     word-spacing: 4px;
     font-size: 30px;
-    text-align: center;
-    width: 40%;
-    height: 650px;
     background-color: #8C8074;
     color: white;
-    float: right;
+    display: flex;
+    align-items: center;
 }
 p.aboutMeIntro
 {
-    margin-top: 30%;
     background-color: transparent;
     color: white;
-}
-.contactBackground
-{
-    /*angle linear gradient*/
-    background-color: white;
-    /*for mozilla  firefox*/
-    background: -moz-linear-gradient(106deg, #F2E2C4 60%, transparent 75%); 
-    /*for Chrome and Safari*/
-    background: -webkit-linear-gradient(106deg, #F2E2C4 60%, transparent 75%);
-    /*for Opera browser*/
-    background: -o-linear-gradient(106deg, #F2E2C4 60%, transparent 75%); 
-    background: linear-gradient(to 110deg, #BFB699 0%,white 100%); 
 }
 .container-fluid
 {
