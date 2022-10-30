@@ -130,7 +130,6 @@ p
     margin-left: 10px;
     margin-right: 10px;
     font-size: 100%;
-    /* color: #401410; */
 }
 .nav-item:link
 {
@@ -216,19 +215,15 @@ b.title
     color: #733729;
     text-shadow: 3px 5px 6.7px #F2E2C4;
     font-size: 23px;
-    text-align: center;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
 }
-#project1
+.project1, .project2
 {
-    margin-top: 30px;
-    margin-bottom: 30px;
     font-size: 12px;
-}
-#project2
-{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 12px;
+    display: flex;
+    align-items: center;
 }
 
 /* About Me Page */
