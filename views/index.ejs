@@ -7,13 +7,12 @@
 <%- include partials/nav_bar.ejs %>
 <main class="min-vh-100">
   <h1>Welcome to the <%= title %> Page</h1>
-  <div id="img">
-      <!--alt is the alternate text if the image does not show up -->
-      <img class="picOne" src="/Assets/images/homeImage.jpg" alt="View of clouds from a plane">
-      <img class="facePic" src="/Assets/images/facePic.JPG" alt="Picture of me">
-      <img class="picTwo" src="/Assets/images/homeImage3.jpg" alt="View from a hotel">
+  <!-- justify-content-center centers the grid of images, bootstrap source: https://mdbootstrap.com/docs/b4/jquery/utilities/horizontal-align/-->
+  <div class="rowHome d-flex flex-row justify-content-center">
+      <img class="picOne img-fluid col" src="/Assets/images/homeImage.jpg" alt="View of clouds from a plane">
+      <img class="facePic img-fluid col" src="/Assets/images/facePic.JPG" alt="Picture of me">
+      <img class="picTwo img-fluid col" src="/Assets/images/homeImage3.jpg" alt="View from a hotel">
   </div>
-  <!-- separates content from footer; doesn't allow elements to float within this div -->
 </main>
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>
