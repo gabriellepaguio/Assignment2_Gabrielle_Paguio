@@ -190,7 +190,7 @@ p
 }
 .profileLink:hover
 {
-    color: #BF8F73;
+    color: #BF8F73 !important;
     text-shadow: 3px 5px 6.7px #BFB699;
     text-decoration: none;
 }
@@ -215,8 +215,8 @@ p
 {
     margin-left: 1%;
     margin-right: 1%;
-    width: auto;
-    height: 650px;
+    width: 100px;
+    height: auto;
     object-fit: cover;
 }
 .facePic
