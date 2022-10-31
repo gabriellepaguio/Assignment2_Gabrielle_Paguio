@@ -15,19 +15,23 @@
             <p>
                 <!-- <br> adds a new line -->
                 <label for="name">Your Name</label><br> 
+                <label class="visually-hidden" for="name">Your Name</label>
                 <!-- placeholder is made so that the user knows what to enter in that input box -->
                 <input type="text" name="name" placeholder="Enter your name">
             </p>
             <p>
                 <label for="email">Your Email</label><br>
+                <label class="visually-hidden" for="email">Your Email</label>
                 <input type="email" name="email" placeholder="Enter your email">
             </p>
             <p>
+                <label class="visually-hidden" for="phoneNumber">Your Phone Number</label>
                 <label for="phoneNumber">Your Phone Number</label><br>
                 <!-- the pattern shows how the phone number should be formed -->
                 <input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(xxx)-xxx-xxxx">
             </p>
             <p>
+                <label class="visually-hidden" for="text">Message</label>
                 <label for ="text">Message</label><br>
                 <textarea name="message" cols="30" rows="10" placeholder="Messages, comments, queries..."></textarea>
             </p>

@@ -6,17 +6,17 @@
 <%- include partials/nav_bar.ejs %>
 <main class="min-vh-100">
     <h1>Welcome to the <%= title %> Page</h1>
-    <!-- resource for grid layout bootstrap: https://getbootstrap.com/docs/4.2/layout/grid/ -->
+    <!-- grid layout bootstrap -->
     <div class="content">
         <div class="rowAboutMe d-flex flex-row text-center">
             <div class="leftAboutMe col-6">
                 <video class="img-fluid" controls preload="auto" autoplay loop muted id="skatingVideo">
-                    <!-- imports the video fro library -->
+                    <!-- imports the video from library -->
                     <source src="/Assets/video/skatingVid.mov" type="video/mp4">
                 </video>
             </div>
             <div class="middleAboutMe col">
-                <!-- uses bootstrap to make image centered and fit the grid, source: https://getbootstrap.com/docs/4.0/content/images/ -->
+                <!-- uses bootstrap to make image centered and fit the grid -->
                 <img class="facePicAboutMe img-fluid mx-auto d-block" src="/Assets/images/facePic.JPG" alt="Picture of me">
             </div>
             <div class="rightAboutMe col">
