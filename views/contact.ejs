@@ -14,24 +14,22 @@
         <form action="mailto:gabriellejoanne.paguio@ontariotechu.net" ?subject="Contact Me" method="post" enctype="text/plain" name="form">
             <p>
                 <!-- <br> adds a new line -->
-                <label class="visually-hidden" for="name">Your Name</label>
+                <label for="name">Your Name</label><br> 
                 <!-- placeholder is made so that the user knows what to enter in that input box -->
-                <input type="text" name="name" placeholder="Enter your name">
+                <input type="text" name="userName" id="name" placeholder="Enter your name">
             </p>
             <p>
-                <label class="visually-hidden" for="email">Your Email</label>
-                <input type="email" name="email" placeholder="Enter your email">
+                <label for="email">Your Email</label><br>
+                <input type="email" name="userEmail" id="email" placeholder="Enter your email">
             </p>
             <p>
-                <label class="visually-hidden" for="phoneNumber">Your Phone Number</label>
-                <label for="phoneNumber">Your Phone Number</label><b
+                <label for="phoneNumber">Your Phone Number</label><br>
                 <!-- the pattern shows how the phone number should be formed -->
-                <input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(xxx)-xxx-xxxx">
+                <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(xxx)-xxx-xxxx">
             </p>
             <p>
-                <label class="visually-hidden" for="text">Message</label>
                 <label for ="text">Message</label><br>
-                <textarea name="message" cols="30" rows="10" placeholder="Messages, comments, queries..."></textarea>
+                <textarea name="message" id="text" cols="30" rows="10" placeholder="Messages, comments, queries..."></textarea>
             </p>
             <p>
                 <!-- creates the submit button which will send to my email if all the inputs are valid -->
