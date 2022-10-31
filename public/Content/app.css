@@ -40,6 +40,7 @@ h1
 {
     font-family: 'Nunito Sans', sans-serif;
     margin: 30px;
+    margin-top: 30px;
     text-align: center;
 }
 p.contactTitle
@@ -104,26 +105,20 @@ p
     font-size: 13px;
     font-family: 'Nunito Sans', sans-serif;
 }
-/* #clearBoth, #clearBothFoot
-{
-    clear: both;
-} */
-/* html
-{
-    position: relative;
-    min-height: 100%;
-} */
-/* #footer
-{
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    text-align: center;
-    font-size: 12px;
-} */
 
 /* Navigation bar */
+#navBar
+{
+    margin-bottom: 30px;
+}
+.navbar-brand:hover
+{
+    border: none;
+    /* !impotant overrides the default style for navbar-brand */
+    color: #401410 !important;
+    text-shadow: 3px 5px 6.7px #BFB699;
+    text-decoration: none;
+}
 .nav-item, .nav-link
 {
     font-family: 'Arvo', serif;
@@ -138,7 +133,7 @@ p
     padding: 8px;
     background-color: white;
     margin: 30px;
-    color: #401410;
+    color: #401410 !important;
     height: 0;
     font-family: 'Arvo', serif;
     text-decoration: none;
@@ -147,14 +142,14 @@ p
 {
     border: none;
     background-color: white;
-    color: #401410;
+    color: #401410 !important;
     font-family: 'Arvo', serif;
     text-decoration: none;
 }
 .nav-item:hover
 {
     border: none;
-    color: #BF8F73;
+    color: #BF8F73 !important;
     font-family: 'Arvo', serif;
     /*first and second values moves the text shadow down by 2px and left 2px, third value 
     is how much the shadow will be blurred, last value is the colour of the shadow*/
@@ -164,17 +159,47 @@ p
 .nav-item:active
 {
     border: none;
-    color: #BF8F73;
+    color: #BF8F73 !important;
     font-family: 'Arvo', serif;
     text-shadow: 3px 5px 6.7px #BFB699;
     text-decoration: none;
 }
-.navbar-brand
+#nameNavBar
 {
     font-family: 'Arvo', serif;
     font-size: 200%;
     color: #8C8074;
     letter-spacing: 10px;
+}
+/* Bottom Nav */
+#profiles
+{
+    float: right;
+    margin-right: 2%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.profileLink:link
+{
+    color: #401410;
+    text-decoration: none;
+}
+.profileLink:visited
+{
+    color: #401410;
+    text-decoration: none;
+}
+.profileLink:hover
+{
+    color: #BF8F73;
+    text-shadow: 3px 5px 6.7px #BFB699;
+    text-decoration: none;
+}
+.profileLink:active
+{
+    border: none;
+    color: #BF8F73;
+    text-shadow: 3px 5px 6.7px #BFB699;
+    text-decoration: none;
 }
 
 /* Home Page */
@@ -188,16 +213,17 @@ p
 /* makes all the pictures the same sizes; the taller picture would have the same height as the others' width */
 .picOne, .picTwo
 {
-    /* width: 300px; */
     margin-left: 1%;
     margin-right: 1%;
-    min-height: 100px;
-    max-width: fit-content;
+    width: auto;
+    height: 650px;
+    object-fit: cover;
 }
 .facePic
 {
-    min-height: 100px;
-    max-width: fit-content;
+    height: 650px;
+    width: auto;
+    object-fit: cover;
 }
 
 /* Projects Page */

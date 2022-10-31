@@ -1,16 +1,18 @@
 <!--NavBar -->
 <!-- for border: https://stackoverflow.com/questions/47500730/how-to-change-navbar-border-color-in-bootstrap-4 -->
 <!--<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-dark" style="background-color: #BF8F73;">-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-dark">
+<nav id="navBar" class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">Gabrielle Paguio</a>
+        <!-- Has an ID because that would override the bootstrap css to make it the custom css 
+        source: https://stackoverflow.com/questions/20721248/how-can-i-override-bootstrap-css-styles-->
+        <a id="nameNavBar" class="navbar-brand" href="/">Gabrielle Paguio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto"> 
 
-            <li class="nav-item">
+            <li id="nav-item" class="nav-item">
                 <% if (title == "Home") { %>
                     <a class="nav-link active" href="/home">
                 <% } else { %>
@@ -19,7 +21,7 @@
                     <i class="fa-solid fa-lg fa-house-user"></i> Home</a>
             </li>
 
-            <li class="nav-item">
+            <li id="nav-item" class="nav-item">
                 <% if (title == "About Me") { %>
                     <a class="nav-link active" href="/about">
                 <% } else { %>
@@ -29,7 +31,7 @@
                     About Me</a>
             </li> 
 
-            <li class="nav-item">
+            <li id="nav-item" class="nav-item">
                 <% if (title == "Projects") { %>
                     <a class="nav-link active" href="/projects">
                 <% } else { %>
@@ -39,7 +41,7 @@
                     Projects</a>
             </li>       
 
-            <li class="nav-item">
+            <li id="nav-item" class="nav-item">
                 <% if (title == "Contact") { %>
                     <a class="nav-link active" href="/contact">
                 <% } else { %>
